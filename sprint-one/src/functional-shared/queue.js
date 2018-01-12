@@ -6,6 +6,7 @@ var someInstance = {
   shift: 1,
   storage: {}
 }
+
 _.extend(someInstance, queueMethods)
 
 return someInstance;
@@ -29,5 +30,4 @@ var queueMethods = {
       return 0;
     }
   }
-
   };

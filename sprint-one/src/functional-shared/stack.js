@@ -28,5 +28,4 @@ var stackMethods = {
       return 0;
     }
   }
-
 };
