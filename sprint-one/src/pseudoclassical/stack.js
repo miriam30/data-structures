@@ -14,11 +14,11 @@ Stack.prototype.pop = function(){
   var value = this.storage[this.counter]
   delete this.storage[this.counter]
   return value
-}
+};
 Stack.prototype.size = function(){
   if(this.counter > 0){
     return this.counter;
   }else {
     return 0;
   }
-}
+};
