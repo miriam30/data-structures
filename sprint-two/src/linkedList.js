@@ -21,27 +21,15 @@ var LinkedList = function() {
       var oldHeads = list.head.value
       list.head = list.head.next;
       return oldHeads
-  };  list.contains = function(target) {
-    //var theNode = list.head;
-    while(list.head){
-      if(list.head.value === target){
-        return true;
-      }
-        list.head = list.head.next;
-     }
-     return false;
-  }
-
-  return list;
-};
+  };
 
   list.contains = function(target) {
-    //var theNode = list.head;
-    while(list.head){
-      if(list.head.value === target){
+    var theNode = list.head;
+    while(theNode){
+      if(theNode.value === target){
         return true;
       }
-        list.head = list.head.next;
+        theNode = theNode.next;
      }
      return false;
   }
